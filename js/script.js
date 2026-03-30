@@ -30,6 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 document.querySelector("body").addEventListener("mousemove", eyeball);
+
 function eyeball() {
   let eyes = document.querySelectorAll(".eye");
   eyes.forEach((eye) => {
@@ -41,4 +42,3 @@ function eyeball() {
     eye.style.transform = `rotate(${rotate}deg)`;
   });
 }
-
