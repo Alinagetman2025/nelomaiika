@@ -286,3 +286,20 @@ p {
     left: 100%;
   }
 }
+.clickcool {
+  width: 800px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+
+}
+/*.clickcool {
+  height: 100px;
+  width: 70px;
+  background: #ff4500 url(tutu.svg) 50px 50px;
+  animation:
+    play 1.3s steps(16) infinite,
+    step 9s linear infinite;
+  position: absolute;
+  left: 0;
+}
