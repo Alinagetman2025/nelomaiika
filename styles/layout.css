@@ -188,3 +188,10 @@ p {
     border-radius: 10%;
   }
 }
+.gif {
+  width: 1280px;
+  height: 100px;
+  background-color: #0207a2e4;
+  overflow: hidden;
+  position: relative;
+}
