@@ -1,0 +1,190 @@
+body {
+  background-color: #f7ead6;
+  margin: 7px;
+  padding: 5;
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: content-box;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Coda Captions";
+  font-size: 70px;
+  font-weight: bold;
+  color: #6f4bc3;
+  width: 400px;
+}
+h2 {
+  text-align: center;
+  font-family: "Gill Sans";
+  font-size: 20px;
+  font-weight: bold;
+  color: #6f4bc3;
+  width: 400px;
+}
+h3 {
+  text-align: center;
+  font-family: "Gill Sans";
+  font-size: 10px;
+  font-weight: bold;
+  color: #f7ead6;
+  width: 40px;
+}
+p {
+  text-align: justify;
+  font-family: "Abel";
+  line-height: 20px;
+  font-size: 20px;
+  color: #6f4bc3;
+  width: 400px;
+}
+.click {
+  text-align: justify;
+  font-family: "Abel";
+  line-height: 20px;
+  font-size: 20px;
+  color: #6f4bc3;
+  width: 400px;
+}
+
+.whimsical {
+  padding: 24px;
+  border-radius: 12px;
+  border: none;
+  background-color: rgb(255, 248, 238);
+  transition: 0.5s;
+}
+.bgButton-1 {
+  padding: 5px;
+  border-radius: 10px;
+  border: none;
+  background-color: #6f4bc3;
+  transition: 0.5s;
+}
+.bgButton-2 {
+  padding: 5px;
+  border-radius: 10px;
+  border: none;
+  background-color: #6f4bc3;
+  transition: 0.5s;
+}
+.bgButton-3 {
+  padding: 5px;
+  border-radius: 10px;
+  border: none 4px;
+  background-color: #6f4bc3;
+  transition: 0.5s;
+}
+.purple {
+  background-color: rgba(111, 75, 195, 1);
+  border-radius: 24px;
+}
+.wow {
+  background: #3db70c;
+  border: solid #6f4bc3 3px;
+  width: 200px;
+  height: 100px;
+  margin: 2 auto;
+  display: block;
+  padding: 3;
+}
+
+.emoji-face {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background: #3db70c;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.emoji-face::before {
+  content: "";
+  top: 180px;
+  position: absolute;
+  width: 150px;
+  height: 75px;
+  color: rgb(9, 3, 15);
+  border-bottom-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+  transition: 0.5s;
+}
+
+.eyes {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  top: 80px;
+}
+
+.eyes .eye {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  display: block;
+  background: white;
+
+  border-radius: 50%;
+  margin: 0 15px;
+}
+.eyes .eye::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: black;
+}
+.star {
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: кручение 3s linear infinite;
+}
+@keyframes кручение {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.boom {
+  width: 150px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: кручение 1s linear infinite;
+}
+@keyframes кручение {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes circle-to-square3 {
+  0% {
+    width: 50px;
+    height: 50px;
+    background-color: #fbd218;
+    border-radius: 50%;
+  }
+  100% {
+    width: 200px;
+    height: 200px;
+    background-color: #2e9aff;
+    border-radius: 10%;
+  }
+}
