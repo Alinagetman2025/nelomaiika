@@ -167,14 +167,14 @@ p {
   }
 }
 .boom {
-  width: 150px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: кручение 1s linear infinite;
+  animation: rot 5s linear infinite;
 }
-@keyframes кручение {
+@keyframes rot {
   from {
     transform: rotate(0deg);
   }
@@ -182,10 +182,25 @@ p {
     transform: rotate(360deg);
   }
 }
+.boom2 {
+  height: 200px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-content: flex-end;
+}
+.boom3 {
+  height: 200px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-content: flex-end;
+}
 .o {
   width: 150px;
   display: flex;
   align-items: center;
+
   justify-content: center;
 }
 @keyframes o {
@@ -202,6 +217,7 @@ p {
     border-radius: 10%;
   }
 }
+
 .gif {
   width: 1280px;
   height: 100px;
@@ -220,14 +236,12 @@ p {
   left: 0;
 }
 @keyframes play {
-  /* смена кадров */
   100% {
     background-position: -1135px;
   }
 }
 
 @keyframes step {
-  /* передвижение объекта */
   100% {
     left: 100%;
   }
@@ -243,14 +257,12 @@ p {
   left: 0;
 }
 @keyframes play {
-  /* смена кадров */
   100% {
     background-position: -1135px;
   }
 }
 
 @keyframes step {
-  /* передвижение объекта */
   100% {
     left: 100%;
   }
@@ -266,14 +278,12 @@ p {
   left: 0;
 }
 @keyframes play {
-  /* смена кадров */
   100% {
     background-position: -1135px;
   }
 }
 
 @keyframes step {
-  /* передвижение объекта */
   100% {
     left: 100%;
   }
