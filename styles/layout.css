@@ -33,12 +33,20 @@ h3 {
   width: 40px;
 }
 p {
-  text-align: justify;
+  text-align: center;
   font-family: "Abel";
-  line-height: 20px;
+  line-height: 30px;
   font-size: 20px;
   color: #6f4bc3;
   width: 400px;
+}
+@keyframes runnin {
+  from {
+    left: 30px;
+  }
+  to {
+    left: -30px;
+  }
 }
 .click {
   text-align: justify;
@@ -174,24 +182,99 @@ p {
     transform: rotate(360deg);
   }
 }
-@keyframes circle-to-square3 {
+.o {
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@keyframes o {
   0% {
     width: 50px;
     height: 50px;
-    background-color: #fbd218;
+    background-color: #ff4500;
     border-radius: 50%;
   }
   100% {
     width: 200px;
     height: 200px;
-    background-color: #2e9aff;
+    background-color: #6f4bc3;
     border-radius: 10%;
   }
 }
 .gif {
   width: 1280px;
   height: 100px;
-  background-color: #0207a2e4;
+  background-color: #ff4500;
   overflow: hidden;
   position: relative;
+}
+.sprite-image {
+  height: 100px;
+  width: 70px;
+  background: #6f4bc3 url(tutu.svg) 50px 50px;
+  animation:
+    play 0.8s steps(16) infinite,
+    step 10s linear infinite;
+  position: absolute;
+  left: 0;
+}
+@keyframes play {
+  /* смена кадров */
+  100% {
+    background-position: -1135px;
+  }
+}
+
+@keyframes step {
+  /* передвижение объекта */
+  100% {
+    left: 100%;
+  }
+}
+.sprite-image2 {
+  height: 100px;
+  width: 70px;
+  background: #ff4500 url(tutu.svg) 50px 50px;
+  animation:
+    play 1.3s steps(16) infinite,
+    step 9s linear infinite;
+  position: absolute;
+  left: 0;
+}
+@keyframes play {
+  /* смена кадров */
+  100% {
+    background-position: -1135px;
+  }
+}
+
+@keyframes step {
+  /* передвижение объекта */
+  100% {
+    left: 100%;
+  }
+}
+.sprite-image3 {
+  height: 100px;
+  width: 70px;
+  background: #3db70c url(tutu.svg) 50px 50px;
+  animation:
+    play 1.5s steps(16) infinite,
+    step 7s linear infinite;
+  position: absolute;
+  left: 0;
+}
+@keyframes play {
+  /* смена кадров */
+  100% {
+    background-position: -1135px;
+  }
+}
+
+@keyframes step {
+  /* передвижение объекта */
+  100% {
+    left: 100%;
+  }
 }
